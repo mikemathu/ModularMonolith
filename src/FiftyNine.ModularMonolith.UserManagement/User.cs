@@ -11,6 +11,7 @@ public class User
         };
 
     public int Id { get; init; }
-    public string FirstName { get; init; } = string.Empty;
-    public string LastName { get; init; } = string.Empty;
+   /* public string FirstName { get; init; } = string.Empty;*/
+    public string? FirstName { get; init; }
+    public string? LastName { get; init; }
 }
