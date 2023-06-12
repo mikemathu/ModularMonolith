@@ -1,5 +1,5 @@
 ﻿using Api.Models;
-using Integration.UserManagement;
+using Integration.UserManagement.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers

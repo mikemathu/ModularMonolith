@@ -11,7 +11,7 @@ public static class WebApplicationBuilderExtensions
 
         builder.Services.AddSingleton<IUsersRepository>()
                         .AddSingleton<Module.UserManagement.Services.IUsers>(x => x.GetRequiredService<IUsersRepository>())
-                        .AddSingleton<Integration.UserManagement.IUsers>(x => x.GetRequiredService<IUsersRepository>());
+                        .AddSingleton<Integration.UserManagement.Services.IUsers>(x => x.GetRequiredService<IUsersRepository>());
 
         return builder;
     }

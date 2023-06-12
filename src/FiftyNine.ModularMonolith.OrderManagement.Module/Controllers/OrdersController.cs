@@ -1,4 +1,4 @@
-﻿using Integration.UserManagement;
+﻿using Integration.UserManagement.Services;
 using Microsoft.AspNetCore.Mvc;
 using Module.OrderManagement.Services;
 

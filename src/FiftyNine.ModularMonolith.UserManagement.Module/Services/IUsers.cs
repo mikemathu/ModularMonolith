@@ -2,6 +2,6 @@
 {
     public interface IUsers
     {
-        Task<Integration.UserManagement.UserDetails?> WithId(int id);
+        Task<Integration.UserManagement.Model.UserDetails?> WithId(int id);
     }
 }

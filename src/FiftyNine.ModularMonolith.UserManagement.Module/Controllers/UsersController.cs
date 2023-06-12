@@ -14,7 +14,7 @@ public class UsersController : Controller
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<Integration.UserManagement.UserDetails>> Get(int id)
+    public async Task<ActionResult<Integration.UserManagement.Model.UserDetails>> Get(int id)
     {
         var user = await users.WithId(id);
 

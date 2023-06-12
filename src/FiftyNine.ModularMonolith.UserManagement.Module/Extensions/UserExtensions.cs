@@ -2,6 +2,6 @@
 
 public static class UserExtensions
 {
-    public static Integration.UserManagement.UserDetails ToUser(this Integration.UserManagement.UserDetails user)
-        => Integration.UserManagement.User.Create(user.Id, user.FirstName, user.LastName);
+    public static Integration.UserManagement.Model.UserDetails ToUser(this Integration.UserManagement.Model.UserDetails user)
+        => Integration.UserManagement.DTO.User.Create(user.Id, user.FirstName, user.LastName);
 }
