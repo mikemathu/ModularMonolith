@@ -3,7 +3,8 @@ using Modules.UserManagement.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
+/*builder.Services.AddControllers();*/
+builder.Services.AddControllersWithViews();
 
 builder.AddOrderManagement();
 builder.AddUserManagement();
@@ -24,10 +25,14 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.UseEndpoints(endpoints =>
+/*app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
-});
+});*/
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
 

@@ -6,7 +6,7 @@ namespace Modules.OrderManagement.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class OrdersController : ControllerBase
+public class OrdersController : Controller
 {
     private readonly IOrders orders;
     private readonly IUsers users;

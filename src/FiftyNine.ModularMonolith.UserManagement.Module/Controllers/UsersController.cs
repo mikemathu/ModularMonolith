@@ -4,7 +4,7 @@ namespace Modules.UserManagement.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class UsersController : ControllerBase
+public class UsersController : Controller
 {
     private readonly Module.UserManagement.Services.IUsers users;
 

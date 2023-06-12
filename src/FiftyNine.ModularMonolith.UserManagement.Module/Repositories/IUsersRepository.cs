@@ -10,7 +10,7 @@
                 return Task.FromResult<Integration.UserManagement.User?>(null);
             }
 
-            return Task.FromResult<Integration.UserManagement.User?>(Integration.UserManagement.User.Create(id, "Chris", "Klug"));
+            return Task.FromResult<Integration.UserManagement.User?>(Integration.UserManagement.User.Create(id, "Michael", "Mathu"));
         }
 
     /*    Task<Integration.UserManagement.User?> Integration.UserManagement.IUsers.WithId(int id)
