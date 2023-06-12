@@ -1,4 +1,5 @@
-﻿using Modules.OrderManagement.Data;
+﻿using Module.OrderManagement.Repositories;
+using Module.OrderManagement.Services;
 
 namespace Modules.OrderManagement.Extensions;
 
@@ -9,7 +10,7 @@ public static class WebApplicationBuilderExtensions
         builder.Services.AddControllers()
                         .AddApplicationPart(typeof(WebApplicationBuilderExtensions).Assembly);
 
-        builder.Services.AddSingleton<IOrders, Orders>();
+        builder.Services.AddSingleton<IOrders, IOrdersRepository>();
 
         return builder;
     }

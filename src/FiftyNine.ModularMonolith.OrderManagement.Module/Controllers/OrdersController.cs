@@ -1,6 +1,6 @@
-﻿using Modules.OrderManagement.Data;
-using Integration.UserManagement;
+﻿using Integration.UserManagement;
 using Microsoft.AspNetCore.Mvc;
+using Module.OrderManagement.Services;
 
 namespace Modules.OrderManagement.Controllers;
 
