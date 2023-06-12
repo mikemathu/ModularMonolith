@@ -1,8 +1,8 @@
-﻿using FiftyNine.ModularMonolith.OrderManagement.Module.Data;
-using FiftyNine.ModularMonolith.UserManagement;
+﻿using Modules.OrderManagement.Data;
+using Integration.UserManagement;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FiftyNine.ModularMonolith.OrderManagement.Module.Controllers;
+namespace Modules.OrderManagement.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

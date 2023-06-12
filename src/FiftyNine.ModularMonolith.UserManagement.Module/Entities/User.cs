@@ -1,4 +1,4 @@
-﻿namespace FiftyNine.ModularMonolith.UserManagement.Module.Entities;
+﻿namespace Modules.UserManagement.Entities;
 
 public class User
 {

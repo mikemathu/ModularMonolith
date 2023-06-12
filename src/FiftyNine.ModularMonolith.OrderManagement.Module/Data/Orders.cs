@@ -1,6 +1,6 @@
-﻿using FiftyNine.ModularMonolith.OrderManagement.Module.Entities;
+﻿using Modules.OrderManagement.Entities;
 
-namespace FiftyNine.ModularMonolith.OrderManagement.Module.Data;
+namespace Modules.OrderManagement.Data;
 
 public interface IOrders
 {

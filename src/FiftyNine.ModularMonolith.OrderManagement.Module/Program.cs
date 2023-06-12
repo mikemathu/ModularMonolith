@@ -1,6 +1,5 @@
 using FakeItEasy;
-using FiftyNine.ModularMonolith.OrderManagement.Module.Extensions;
-using FiftyNine.ModularMonolith.UserManagement;
+using Modules.OrderManagement.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,9 +7,9 @@ builder.Services.AddControllers();
 
 builder.AddOrderManagement();
 
-var usersFake = A.Fake<IUsers>();
+/*var usersFake = A.Fake<IUsers>();
 A.CallTo(() => usersFake.WithId(1)).Returns(User.Create(1, "John", "Doe"));
-builder.Services.AddSingleton(usersFake);
+builder.Services.AddSingleton(usersFake);*/
 
 var app = builder.Build();
 

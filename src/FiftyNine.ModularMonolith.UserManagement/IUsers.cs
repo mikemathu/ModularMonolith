@@ -1,4 +1,4 @@
-﻿namespace FiftyNine.ModularMonolith.UserManagement;
+﻿namespace Integration.UserManagement;
 
 public interface IUsers
 {

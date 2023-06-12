@@ -1,7 +1,7 @@
-﻿using FiftyNine.ModularMonolith.UserManagement;
+﻿using Integration.UserManagement;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FiftyNine.ModularMonolith.Api.Controllers
+namespace Api.Controllers
 {
     public class HomeController : Controller
     {

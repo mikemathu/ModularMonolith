@@ -1,6 +1,6 @@
-﻿using FiftyNine.ModularMonolith.UserManagement.Module.Data;
+﻿using Module.UserManagement.Repositories;
 
-namespace FiftyNine.ModularMonolith.UserManagement.Module.Extensions;
+namespace Modules.UserManagement.Extensions;
 
 public static class WebApplicationBuilderExtensions
 {
@@ -9,9 +9,9 @@ public static class WebApplicationBuilderExtensions
         builder.Services.AddControllers()
                         .AddApplicationPart(typeof(WebApplicationBuilderExtensions).Assembly);
 
-        builder.Services.AddSingleton<Users>()
-                        .AddSingleton<Data.IUsers>(x => x.GetRequiredService<Users>())
-                        .AddSingleton<IUsers>(x => x.GetRequiredService<Users>());
+        builder.Services.AddSingleton<IUsersRepository>()
+                        .AddSingleton<Module.UserManagement.Services.IUsers>(x => x.GetRequiredService<IUsersRepository>())
+                        .AddSingleton<Integration.UserManagement.IUsers>(x => x.GetRequiredService<IUsersRepository>());
 
         return builder;
     }

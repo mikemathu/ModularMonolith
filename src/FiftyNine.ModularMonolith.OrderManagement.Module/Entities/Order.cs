@@ -1,4 +1,4 @@
-﻿namespace FiftyNine.ModularMonolith.OrderManagement.Module.Entities;
+﻿namespace Modules.OrderManagement.Entities;
 
 public class Order
 {

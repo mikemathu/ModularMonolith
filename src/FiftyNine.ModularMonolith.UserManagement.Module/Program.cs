@@ -1,4 +1,4 @@
-using FiftyNine.ModularMonolith.UserManagement.Module.Extensions;
+using Modules.UserManagement.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

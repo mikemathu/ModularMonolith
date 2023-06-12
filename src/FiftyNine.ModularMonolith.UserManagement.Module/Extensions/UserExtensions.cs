@@ -1,7 +1,7 @@
-﻿namespace FiftyNine.ModularMonolith.UserManagement.Module.Extensions;
+﻿namespace Modules.UserManagement.Extensions;
 
 public static class UserExtensions
 {
-    public static UserManagement.User ToUser(this User user)
-        => UserManagement.User.Create(user.Id, user.FirstName, user.LastName);
+    public static Integration.UserManagement.User ToUser(this Integration.UserManagement.User user)
+        => Integration.UserManagement.User.Create(user.Id, user.FirstName, user.LastName);
 }

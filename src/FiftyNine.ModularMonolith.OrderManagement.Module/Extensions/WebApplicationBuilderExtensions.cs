@@ -1,6 +1,6 @@
-﻿using FiftyNine.ModularMonolith.OrderManagement.Module.Data;
+﻿using Modules.OrderManagement.Data;
 
-namespace FiftyNine.ModularMonolith.OrderManagement.Module.Extensions;
+namespace Modules.OrderManagement.Extensions;
 
 public static class WebApplicationBuilderExtensions
 {

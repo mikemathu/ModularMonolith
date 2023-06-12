@@ -1,5 +1,5 @@
-using FiftyNine.ModularMonolith.OrderManagement.Module.Extensions;
-using FiftyNine.ModularMonolith.UserManagement.Module.Extensions;
+using Modules.OrderManagement.Extensions;
+using Modules.UserManagement.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
