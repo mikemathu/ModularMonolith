@@ -2,5 +2,5 @@
 
 public interface IUsers
 {
-    Task<User?> WithId(int id);
+    Task<UserDetails?> WithId(int id);
 }

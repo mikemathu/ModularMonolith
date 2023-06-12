@@ -2,16 +2,17 @@
 
 public class User
 {
-    public static User Create(int id, string firstName, string lastName)
-        => new User
-        {
+    public static UserDetails Create(int id, string firstName, string lastName)
+    {
+        var user = new UserDetails
+        {   
             Id = id,
             FirstName = firstName,
             LastName = lastName
         };
+        return user;
 
-    public int Id { get; init; }
-   /* public string FirstName { get; init; } = string.Empty;*/
-    public string? FirstName { get; init; }
-    public string? LastName { get; init; }
+    }
+
+
 }
