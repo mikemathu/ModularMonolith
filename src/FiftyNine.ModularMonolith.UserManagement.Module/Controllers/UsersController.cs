@@ -16,7 +16,7 @@ public class UsersController : Controller
     [HttpGet("{id}")]
     public async Task<ActionResult<Integration.UserManagement.Model.UserDetails>> Get(int id)
     {
-        var user = await users.WithId(id);
+        var user = await users.WithIdd(id);
 
         return user == null ? NotFound() : user;
     }

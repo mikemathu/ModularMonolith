@@ -25,7 +25,7 @@ public class OrdersController : Controller
         if (order == null)
             return NotFound();
 
-        var user = await users.WithId(order.OrderedById);
+        var user = await users.WithIdd(order.OrderedById);
 
         return Ok(new { 
             Id = order.Id,

@@ -20,14 +20,13 @@ namespace Api.Controllers
 
             /* return user == null ? NotFound() : Ok(user);*/
 
-            var userInfo = new UserVM
+           /* UserVMList usersList = new UserVMList()
             {
-                Id = user.Id,
-                Fname = user.FirstName,
-                Lname = user.LastName
-            };
+                UsersList = (IEnumerable<UserVM>)user
+            };*/
 
-            return View(userInfo);
+            return View(user);
+
         }
     }
 }

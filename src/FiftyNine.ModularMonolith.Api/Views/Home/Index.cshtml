@@ -1,6 +1,12 @@
-﻿@model Api.Models.UserVM
+﻿@model IEnumerable<Integration.UserManagement.Model.UserDetails>
 
 
-Id is: @Model.Id <br />
-First Name: @Model.Fname<br />
-Last Name: @Model.Lname<br />
+@*Id is: @Model.Id <br />*@
+@*First Name: @Model.First <br />*@
+@*Last Name: @Model.Lname<br />*@
+   @foreach (var item in Model)
+{   
+    <div class="col-6">
+        <button style="width: 100%; padding:20px;  margin: 20px; 10px;" data-id="@item.Id" class="btn btn-primary allocateBtn" type="button"> @Html.DisplayFor(modelItem => item.FirstName) </button>
+    </div>
+}
