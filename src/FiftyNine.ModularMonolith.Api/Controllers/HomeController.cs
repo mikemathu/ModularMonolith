@@ -1,5 +1,4 @@
-﻿using Api.Models;
-using Integration.UserManagement.Services;
+﻿using Integration.UserManagement.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
@@ -17,13 +16,6 @@ namespace Api.Controllers
         public async Task<IActionResult> Index()
         {
             var user = await users.WithId(1);
-
-            /* return user == null ? NotFound() : Ok(user);*/
-
-           /* UserVMList usersList = new UserVMList()
-            {
-                UsersList = (IEnumerable<UserVM>)user
-            };*/
 
             return View(user);
 
